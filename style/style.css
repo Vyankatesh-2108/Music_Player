@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
-    font-family: cursive;
-    
-}
-
 .main_div{
     height: 100vh;
     width: 100%;
@@ -34,21 +28,10 @@ html{
      }
  }
 
-.music_container{
-    width: 32rem;
-    height: 52rem;
-    /*background-color: #8d5bce;*/
-   /* background-image: url(./Images/170697.jpg);*/
-    background-size: cover;
-    border-radius: 2rem;
-    /*box-shadow: 0 1.2rem 3rem 0.5rem rgba(174, 16, 236, 0.2);*/
-    padding: 3rem;
-    text-align: center;
-}
 
 .music_container #title{
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.4rem;
     word-spacing: 0.5rem;
     font-family: Monoton;
     color: #f3f3f6;
@@ -61,6 +44,7 @@ html{
     color: #292828;
     text-transform: capitalize;
     letter-spacing: 0.1rem;
+    font-family: cursive;
     font-size: 2.5rem;
     margin-bottom: 4rem;
     font-weight: 300;
