@@ -36,10 +36,13 @@ html{
 
 .music_container{
     width: 32rem;
-    
+    height: 52rem;
     /*background-color: #8d5bce;*/
    /* background-image: url(./Images/170697.jpg);*/
+    background-size: cover;
+    border-radius: 2rem;
     /*box-shadow: 0 1.2rem 3rem 0.5rem rgba(174, 16, 236, 0.2);*/
+    padding: 3rem;
     text-align: center;
 }
 
