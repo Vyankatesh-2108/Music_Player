@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
 
 </head>
@@ -23,24 +24,35 @@ html{
 }
 
 .main_div{
-    width: 100vw;
     height: 100vh;
-    background: -webkit-linear-gradient(left,white,black);
-    background-image: url(./Images/keith-misner-h0Vxgz5tyXA-unsplash.jpg);
-    background-size: cover;
-    opacity: 5;
+    width: 100%;
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 300%, 300%;
+    animation: color 12s ease-in-out infinite;
     display: grid;
     place-items: center;
-}
+ }
+ 
+ @keyframes color{
+     0%{
+         background-position: 0 50%;
+     }
+     50%{
+         background-position: 100% 50%;
+     }
+     100%{
+         background-position: 0 50%;
+     }
+ }
 
 .music_container{
-    width: 35rem;
-    height: 55rem;
+    width: 32rem;
+    height: 52rem;
     /*background-color: #8d5bce;*/
-    background-image: url(./Images/170697.jpg);
+   /* background-image: url(./Images/170697.jpg);*/
     background-size: cover;
     border-radius: 2rem;
-    box-shadow: 0 1.2rem 3rem 0.5rem rgba(174, 16, 236, 0.2);
+    /*box-shadow: 0 1.2rem 3rem 0.5rem rgba(174, 16, 236, 0.2);*/
     padding: 3rem;
     text-align: center;
 }
@@ -49,17 +61,18 @@ html{
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     word-spacing: 0.5rem;
-    color: #634af3;
+    font-family: Monoton;
+    color: #f3f3f6;
     margin: 2rem 0 0.5rem 0;
     font-size: 2.5rem;
-    font-weight: 500;
+   
 }
 
 .music_container #artist{
-    color: #cccaca;
+    color: #292828;
     text-transform: capitalize;
     letter-spacing: 0.1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 4rem;
     font-weight: 300;
 }
@@ -75,7 +88,7 @@ img{
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 1.2rem 3rem 0.5rem rgba(221, 128, 6, 0.4);
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(221, 6, 6, 0.4);
 }
 
 .music_controls {
